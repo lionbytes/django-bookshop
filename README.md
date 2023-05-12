@@ -1,2 +1,2 @@
 # Djeact
-React &amp; Django tutorial project 
+React & Django tutorial project by Udemy's Krystian Czekalski
