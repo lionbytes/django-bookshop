@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <p>Hello, we have <b>{{ books|length }}</b> books in our database.</p>
+    <h2>Published Books:</h2>
+    <ol>
+    {% for book in books %}
+      {% if book.is_published %}
+        <li><strong>{{ book.title }} :</strong> {{ book.description }}</li>
+      {% endif %}
+    {% endfor %}
+    </ol>
+</body>
+</html>
