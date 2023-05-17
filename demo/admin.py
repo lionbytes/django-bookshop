@@ -8,6 +8,7 @@ class BookAdmin(admin.ModelAdmin):
 	list_filter = ['published']
 	search_fields = ['title', 'description']
 
-admin.site.register(BookNumber)
-admin.site.register(Character)
+
 admin.site.register(Author)
+admin.site.register(Character)
+admin.site.register(BookNumber)

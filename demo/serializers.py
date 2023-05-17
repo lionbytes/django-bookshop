@@ -19,10 +19,10 @@ class AuthorSerializer(serializers.ModelSerializer):
 class BookSerializer(serializers.ModelSerializer):
   number = BookNumberSerializer(many=False)
   characters = CharacterSerializer(many=True)
-  authors = AuthorSerializer(many=True)
+  author = AuthorSerializer(many=False)
   class Meta:
     model = Book
-    fields = ['id', 'title', 'description', 'price', 'is_published', 'published', 'number', 'characters', 'authors']
+    fields = ['id', 'title', 'description', 'price', 'is_published', 'published', 'number', 'characters', 'author']
 
 class BookMiniSerializer(serializers.ModelSerializer):
   class Meta:
