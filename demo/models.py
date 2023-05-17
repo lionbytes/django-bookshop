@@ -7,7 +7,7 @@ class BookNumber(models.Model):
 
   def __str__(self) -> str:
     return f"{self.isbn_10}"
-  
+
 
 class Author(models.Model):
   name = models.CharField(max_length=30)
@@ -37,7 +37,7 @@ class Book(models.Model):
   author =        models.ForeignKey(Author, null=True, blank=True, default=None, 
                                     on_delete=models.CASCADE, related_name='books')
   def __str__(self) -> str:
-      return self.title
+    return self.title
 
 
 # class BookAuthor(models.Model):

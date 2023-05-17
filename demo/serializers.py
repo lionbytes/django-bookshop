@@ -28,3 +28,8 @@ class BookMiniSerializer(serializers.ModelSerializer):
   class Meta:
     model = Book
     fields = ['id', 'title']
+
+class CharacterListSerializer(serializers.ModelSerializer):
+  class Meta:
+    model = Character
+    fields = ['id', 'name', 'books']
