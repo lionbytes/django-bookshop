@@ -1,2 +1,2 @@
-# Djeact
-React & Django tutorial project by Udemy's Krystian Czekalski
+# Online Django Bookshop
+A simple online bookshop project, created as a demo for Django practicing purposes.
